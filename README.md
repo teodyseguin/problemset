@@ -1,3 +1,11 @@
+The project should be in standard [**CommonJS**](http://www.commonjs.org/) format and will use 
+[**ES6**](https://nodejs.org/en/docs/es6/) specifications specially _Promises_, _Generators_ and _Classes_. 
+Using a transpiler/compiler will be optional but [babeljs](https://babeljs.io/) is recommended. 
+Please review your answers as this will assess your development style and adherence to best practices(readability, correctness and testability)  
+using NodeJS. The submission format will be a [**Github**](https://github.com/) public repository and when doing 
+commits please follow [angular's commit message format](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit).
+
+
 ## Environment
 * NodeJS `v4.3.0` or later
 
