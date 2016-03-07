@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "dependencies": {
     "rand-token": "^0.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
   }
 }
