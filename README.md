@@ -1,13 +1,15 @@
-The project should be in standard [**CommonJS**](http://www.commonjs.org/) format and will use 
-[**ES6**](https://nodejs.org/en/docs/es6/) specifications specially _Promises_, _Generators_ and _Classes_. 
-Using a transpiler/compiler will be optional but [babeljs](https://babeljs.io/) is recommended. 
-Please review your answers as this will assess your development style and adherence to best practices(readability, correctness and testability) 
-using NodeJS. The submission format will be a [**Github**](https://github.com/) public repository and when doing 
-commits please follow [angular's commit message format](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit).
+The use of [**ES6**](https://nodejs.org/en/docs/es6/) features especially _Promises_, _Generators_ and _Classes_ are highly encouraged. Using a transpiler/compiler will be optional but [babeljs](https://babeljs.io/) is recommended.
+The candidate should review his answers as this will assess the candidate's development style and adherence to best practices (readability, correctness and testability) in NodeJS.
+
+Before starting the project, the candidate should fork this repository and apply his changes to that forked version accordingly (the link to this forked repository should be submitted). Commit messages should follow [angularjs's commit message format](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit).
+
+Any third party `npm` modules may be used as long it is added as `dependency` in the `package.json` file.
+
+Solutions to the programming challenges should be put on `index.js`.
 
 
 ## Environment
-* NodeJS `v4.3.0` or later
+* NodeJS `v5.7.1` or later
 
 ## Library (lib.js)
 
@@ -16,11 +18,6 @@ commits please follow [angular's commit message format](https://github.com/angul
 ```
 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.
 ```
-
-## Instructions
-
-* Usage of any third party npm modules is allowed.
-* Solutions to the problem set should be put on `index.js` file.
 
 ### 1. Asynchronous Operations
 
