@@ -78,14 +78,12 @@ source.on('data', (data) => {
 ```batch
 CHUNK: gh82Ad.AJK092shLKmb
 gh82Ad
-AJK092shLKmblkg
 CHUNK: lkg.6294fjsk.5..642ksLMMD0g
-lkg
+AJK092shLKmblkg
 6294fjsk
 5
-642ksLMMD0g
 CHUNK: kms.zenoan.
-kms
+642ksLMMD0gkms
 zenoan
 ```
 
