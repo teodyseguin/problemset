@@ -121,7 +121,8 @@ class Resource extends EventEmitter {
     }
 }
 
-// We have this singleton class to keep track of every resources which are borrowed and released
+// We have this singleton class to keep track of every resources which
+// are borrowed and released from our implementation below
 class ResourceSingleton {
     constructor() {
         this._resources = {};
@@ -136,7 +137,7 @@ class ResourceSingleton {
     }
 }
 
-// Orchestrate the output here. The appropriate function will be called,
+// Orchestrate our outputs here. The appropriate function will be called,
 // depending on the command line argument provided. The list of available
 // command line arguments are found below
 let async = function() {
@@ -175,7 +176,7 @@ let async = function() {
     };
 
 // These are the command line arguments which you can feed on when running the script
-// Each argument correspond to a particular function invocation, which are defined above.
+// Each argument correspond to a particular function invocation, that are defined above.
 // e.g. node index.js async
 // e.g. node index.js stream
 // e.g. node index.js resource
