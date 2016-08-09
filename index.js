@@ -45,29 +45,34 @@ class RandStringSource extends EventEmitter {
         // of the '.' enclosure and concatenate it to the next first item, as 
         // that would serve as the ending '.' enclosure
         if (cc.length === 2) {
-            if (this._remainder !== null) {
-                this.emit('data', this._remainder + cc[0]);
-            }
-            else {
-                this.emit('data', cc[0]);
-            }
-
+            this._emit(cc[0], true);
             this._remainder = cc[1];
         }
         else {
-            let lastItem = cc[cc.length - 1];
+            let lastItem = cc[cc.length - 1],
+                first = true;
             cc.pop();
 
             cc.forEach(index => {
-                if (this._remainder !== null) {
-                    this.emit('data', this._remainder + index);
+                if (first) {
+                    this._emit(index, true);
+                    first = false;
                 }
                 else {
-                    this.emit('data', index);
+                    this._emit(index);
                 }
             });
 
             this._remainder = lastItem;
+        }
+    }
+
+    _emit(payload, first = false) {
+        if (this._remainder !== null && first === true) {
+            this.emit('data', this._remainder + payload);
+        }
+        else {
+            this.emit('data', payload);
         }
     }
 }
